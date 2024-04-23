@@ -3,6 +3,7 @@ import axios from 'axios';
 
 function FetchMultiplePostes() {
     const [postes, setPostes] = useState([])
+
     useEffect(() =>{
      axios.get('https://jsonplaceholder.typicode.com/posts')
      .then((result) => {
@@ -12,7 +13,7 @@ function FetchMultiplePostes() {
         console.log(err)
         
      });
-    })
+    },[])
     return (
         <div>
             <ul>
