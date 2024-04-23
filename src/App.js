@@ -8,7 +8,7 @@ import EffectExample1 from "./Components/UseEffectPractice/EffectExample1";
 import ComponentA from "./Components/Context/ComponentA";
 import React from "react";
 import MyCounter1 from "./Components/useReducerPractice/MyCounter1";
-
+import MyCounter2 from "./Components/useReducerPractice/MyCounter2";
 export const PriceContext = React.createContext();
 export const ItemContext = React.createContext();
 function App() {
@@ -31,7 +31,8 @@ function App() {
         
       </PriceContext.Provider> */}
 
-      <MyCounter1/>
+      {/* <MyCounter1/> */}
+      <MyCounter2 />
     </div>
   );
 }
