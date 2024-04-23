@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function EffectExample1() {
   const [count, setCount] = useState(0);
-  /*useEffect work after each render* and must be iside the class function / 
+  /*useEffect work after each render* and must be iside the class function */ 
   useEffect(() =>{
     document.title = `you clicked ${count} times `
   })
