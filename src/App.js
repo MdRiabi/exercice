@@ -4,6 +4,7 @@ import Counter from './Components/UseState/Counter';
 import Counter1 from './Components/UseState/Counter1';
 import Counter2 from './Components/UseState/Counter2';
 import HookStateArray from './Components/UseState/HookStateArray';
+import EffectExample1 from './Components/UseEffectPractice/EffectExample1';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
        <Counter/>
        <Counter2/>
        <HookStateArray/>
+       <EffectExample1/>
     </div>
    
   );
