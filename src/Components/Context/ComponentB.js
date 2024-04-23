@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import ComponentC from './ComponentC'
+import { PriceContext, ItemContext } from '../../App'
 
 function ComponentB() {
+    const price = useContext(PriceContext);
+    const item = useContext(ItemContext);
     return (
-        <ComponentC/>
+
+        <div>{price} {item} </div>
     )
 }
 
