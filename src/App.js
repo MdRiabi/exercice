@@ -18,6 +18,7 @@ import UseReducerDataFetch from "./Components/useStateAnduseReducer/UseReducerDa
 import MainComponent from "./Components/UseCallBackPractice/MainComponent";
 import MyMemoCounter from "./Components/UseMemoPractice/MyMemoCounter";
 import FocusInput from "./Components/UseRefPractice/FocusInput";
+import Timer from "./Components/UseRefPractice/Timer";
 export const PriceContext = React.createContext();
 export const ItemContext = React.createContext();
 
@@ -46,7 +47,9 @@ function App() {
       {/* <UseReducerDataFetch/> */}
      {/*  <MainComponent/> */}
      {/* <MyMemoCounter/> */}
-     <FocusInput/>
+     {/* <FocusInput/> */}
+
+     <Timer/>
 
     </div>
   );
