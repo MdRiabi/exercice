@@ -16,6 +16,7 @@ import MyCounter3 from "./Components/useReducerPractice/MyCounter3";
 import UseStateDataFetch from "./Components/useStateAnduseReducer/UseStateDataFetch";
 import UseReducerDataFetch from "./Components/useStateAnduseReducer/UseReducerDataFetch";
 import MainComponent from "./Components/UseCallBackPractice/MainComponent";
+import MyMemoCounter from "./Components/DataFetching/UseMemoPractice/MyMemoCounter";
 export const PriceContext = React.createContext();
 export const ItemContext = React.createContext();
 
@@ -42,7 +43,8 @@ function App() {
 
       {/* <UseStateDataFetch/> */}
       {/* <UseReducerDataFetch/> */}
-      <MainComponent/>
+     {/*  <MainComponent/> */}
+     <MyMemoCounter/>
 
     </div>
   );
