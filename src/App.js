@@ -14,6 +14,7 @@ import MyCounter1 from "./Components/useReducerPractice/MyCounter1";
 import MyCounter2 from "./Components/useReducerPractice/MyCounter2";
 import MyCounter3 from "./Components/useReducerPractice/MyCounter3";
 import UseStateDataFetch from "./Components/useStateAnduseReducer/UseStateDataFetch";
+import UseReducerDataFetch from "./Components/useStateAnduseReducer/UseReducerDataFetch";
 export const PriceContext = React.createContext();
 export const ItemContext = React.createContext();
 
@@ -38,7 +39,8 @@ function App() {
   return (
     <div className="App">
 
-      <UseStateDataFetch/>
+      {/* <UseStateDataFetch/> */}
+      <UseReducerDataFetch/>
 
     </div>
   );
