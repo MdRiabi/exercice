@@ -13,6 +13,7 @@ import React, { useReducer } from "react";
 import MyCounter1 from "./Components/useReducerPractice/MyCounter1";
 import MyCounter2 from "./Components/useReducerPractice/MyCounter2";
 import MyCounter3 from "./Components/useReducerPractice/MyCounter3";
+import UseStateDataFetch from "./Components/useStateAnduseReducer/UseStateDataFetch";
 export const PriceContext = React.createContext();
 export const ItemContext = React.createContext();
 
@@ -35,14 +36,11 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <CountContext.Provider value={{CoutState: count, CountDispatch: dispatch}}>
-      <div className="App">
-        Count: {count}
-        <ComponentA />
-        <ComponentX />
-        <ComponentZ />
-      </div>
-    </CountContext.Provider>
+    <div className="App">
+
+      <UseStateDataFetch/>
+
+    </div>
   );
 }
 
@@ -85,3 +83,15 @@ export default App;
   /* <MyCounter3/> */
 }
 /* </div> */
+
+
+
+
+{/* <CountContext.Provider value={{CoutState: count, CountDispatch: dispatch}}>
+      <div className="App">
+        Count: {count}
+        <ComponentA />
+        <ComponentX />
+        <ComponentZ />
+      </div>
+    </CountContext.Provider> */}
