@@ -26,4 +26,4 @@ function MainComponent() {
   );
 }
 
-export default MainComponent;
+export default React.memo(MainComponent);

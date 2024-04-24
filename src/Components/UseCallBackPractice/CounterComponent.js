@@ -9,4 +9,4 @@ function CounterComponent({text, count}) {
     )
 }
 
-export default CounterComponent
+export default React.memo(CounterComponent);

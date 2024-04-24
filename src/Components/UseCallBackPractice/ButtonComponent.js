@@ -8,4 +8,4 @@ function ButtonComponent({handleClick, children}) {
     )
 }
 
-export default ButtonComponent
+export default React.memo(ButtonComponent);
